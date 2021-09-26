@@ -4,9 +4,10 @@ import (
 	"gorm.io/gorm"
 )
 
-type User struct {
+type Game struct {
 	ID		 		int			`gorm:"primaryKey" json:"id"`
 	Name     		string 		`json:"name"`
-	Email			string		`json:"email"`
+	Category      	string 		`json:"category"`
+	//SellerID		int    		`json:"client_id"`
 	gorm.Model 					//`json:"-"`
 }
