@@ -8,7 +8,6 @@ import (
 
 func main() {
 	config.InitDB()
-	config.InitMigrate()
 	e := routes.NewRoutes()
 	ownMid.LogMiddlewareInit(e)
 	e.Start("localhost:8000")
