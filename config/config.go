@@ -23,6 +23,6 @@ func InitDB() {
 }
 
 func InitMigrate() {
-	//DB.AutoMigrate(&models.User{})
 	DB.AutoMigrate(&models.Game{})
+	DB.AutoMigrate(&models.User{})
 }
